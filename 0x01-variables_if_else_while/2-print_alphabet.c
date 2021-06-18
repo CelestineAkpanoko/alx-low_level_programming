@@ -8,10 +8,13 @@
 int main(void)
 {
 char ch;
+char new_line;
+new_line = '\n';
+
 for (ch = 'a'; ch <= 'z'; ch++)
 {
 	putchar(ch);
 }
-printf("\n");
+putchar(new_line);
 return (0);
 }
