@@ -1,15 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main - Prints a random number and states whether
- *	it is positive, zero, or negative.
+/**
+ * main - Checks and prints when a random number is
+ * positive, zero, or negative.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-/* main - Entry point */
 int n;
 
 srand(time(0));
