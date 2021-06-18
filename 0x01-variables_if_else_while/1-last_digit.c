@@ -14,7 +14,7 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
-	char strn = (char) n;
+	char str_n = (char) n;
 	int last_n = (int) str_n[-1];
 
 	if (last_n > 5)
@@ -27,7 +27,7 @@ if (n > 0)
 }
 else
 {
-	char strn = (char) n;
+	char str_n = (char) n;
 	int last_n = (int) str_n[-1];
 
 	last_n *= -1;
