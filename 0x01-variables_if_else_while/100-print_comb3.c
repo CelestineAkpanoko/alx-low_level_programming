@@ -14,7 +14,10 @@ int main(void)
 		for (j = 1; j < 10; j++){
 			putchar((i % 10) + '0');
 			putchar((j % 10) + '0');
-
+			if ( i == j)
+			{
+				continue;
+			}
 			putchar(',');
 			putchar(' ');
 		}
