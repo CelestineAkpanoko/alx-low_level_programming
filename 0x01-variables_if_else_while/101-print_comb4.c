@@ -17,16 +17,20 @@ int main(void)
 		{
 			for (z = 2; z < 10; z++)
 			{
+				if (x >= y && x >= z)
+				{
+					if (y >= z)
+						continue;
+				}
 				putchar((x % 10) + '0');
 				putchar((y % 10) + '0');
 				putchar((z % 10) + '0');
-				if (x != 7 && y != 8 && z != 9)
+				putchar(',');
+				putchar(' ')
+				if (x == 7 && y == 8 && z == 9)
 				{
-					putchar(',');
-					putchar(' ');
-				}
-				else
 					break;
+				}
 			}
 		}
 	}
