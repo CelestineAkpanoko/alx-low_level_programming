@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 	char str[] = "Holberton";
-	int i = 0;
+	i = 0;
 
 	while (i < 9)
 	{
