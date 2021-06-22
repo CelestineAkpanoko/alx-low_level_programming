@@ -6,7 +6,14 @@
  */
 int main(void)
 {
-	_putchar('Holberton');
+	int i;
+	char str[] = "Holberton";
+	int i = 0;
 
+	while (i < 9)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
