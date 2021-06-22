@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_times_tables - prints the time table of n
+ * print_times_table - prints the time table of n
  *
  * @n: the value of the times table to be printed
  */
@@ -35,7 +35,7 @@ void print_times_table(int n)
 				}
 				else if (prod <= 99 && prod >= 10)
 				{
-					_putchar((prod /10) + '0');
+					_putchar((prod / 10) + '0');
 				}
 				_putchar((prod % 10) + '0');
 			}
