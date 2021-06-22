@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned logn fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
 	for (i = 0; i < 50; i++)
 	{
