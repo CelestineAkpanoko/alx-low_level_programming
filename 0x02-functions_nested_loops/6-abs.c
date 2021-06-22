@@ -6,10 +6,10 @@
  *
  * Return: abs value of the int
  */
-int _abs(int n)
+int _abs(int x)
 {
-	if (n >= 0)
-		return (n);
+	if (x >= 0)
+		return (x);
 	else
-		return (-n);
+		return (-x);
 }
