@@ -24,9 +24,6 @@ int main(void)
 		else
 			printf("%d", i);
 
-		if (i == 100)
-			continue;
-
 		printf(" ")
 	}
 
