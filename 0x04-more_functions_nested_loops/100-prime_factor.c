@@ -7,26 +7,18 @@
  */
 int main(void)
 {
-	long int n;
+	long n, i;
 
 	n = 612852475143;
-	long int div = 2, res = 0, max_fact;
 
-	while (n != 0)
+	for (i = 2; i <= n; i++)
 	{
-		if (n % div != 0)
-			div += 1;
-		else
+		if (n % i == 0)
 		{
-			max_fact = n;
-			n = n /div;
-			if (n == 1)
-			{
-				printf("%d", max_fact);
-				res = 1;
-				break;
-			}
+			n = n / i;
+			i--;
 		}
 	}
+	printf("%lu\n", i);
 	return (0);
 }
