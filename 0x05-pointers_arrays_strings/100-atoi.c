@@ -6,7 +6,7 @@
  *
  * Return: the int, if not then 0.
  */
-int __atoi(char *s)
+int _atoi(char *s)
 {
 	int i, z, p;
 
