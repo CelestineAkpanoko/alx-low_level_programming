@@ -6,7 +6,7 @@
  * @s2: second string to be compared.
  *
  * Return: a positive value if s1 is greater, 0 if equal
- * 	and negative if s1 is lesser.
+ *	and negative if s1 is lesser.
  */
 int _strcmp(char *s1, char *s2)
 {
