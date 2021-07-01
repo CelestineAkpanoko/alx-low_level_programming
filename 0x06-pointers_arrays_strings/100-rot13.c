@@ -11,7 +11,8 @@ char *rot13(char *str)
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
-	{	if (str[i] == " ")
+	{	
+		if (str[i] == " ")
 			continue;
 		str[i] = str[i] + 13;
 	}
