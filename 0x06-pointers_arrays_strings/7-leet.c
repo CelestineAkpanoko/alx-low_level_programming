@@ -6,20 +6,24 @@
  *
  * Return: encoded string.
  */
-char *leet(char *n)
+char *leet(char *str)
 {
-	int i, j;
+	int i = 0, n = 5, j;
+	char letter[5] = {'A', 'E', 'O', 'T', 'L'};
+	char number[5] = {'4', '3', '0', '7', '1'};
 
-	char s1[10] = "aAeEoOtTlL";
-	char S2[10] = "4433007711";
-
-	for (i = 0; n[i] != '\0'; i++)
+	while (str[i])
 	{
-		for (j = 0; j < 10; j++)
+		j = 0;
+
+		while (j < n)
 		{
-			if (n[i] == s1[j])
-				n[i] = s2[j];
+			if (str[i] == letter[j] || str[i] - 32 == number[j])
+				str[i] = number[j];
+
+			j++;
 		}
+		i++;
 	}
-	return (n);
+	return (str);
 }
