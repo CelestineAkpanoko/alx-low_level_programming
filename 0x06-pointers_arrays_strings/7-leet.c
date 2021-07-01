@@ -18,7 +18,7 @@ char *leet(char *str)
 
 		while (j < n)
 		{
-			if (str[i] == letter[j] || str[i] - 32 == number[j])
+			if (str[i] == letter[j] || (str[i] - 32) == number[j])
 				str[i] = number[j];
 
 			j++;
