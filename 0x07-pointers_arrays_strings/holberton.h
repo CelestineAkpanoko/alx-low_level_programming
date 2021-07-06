@@ -1,5 +1,6 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+#include <stddef.h>
 
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
