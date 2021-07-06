@@ -9,16 +9,22 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	long sum;
+	int i;
+	long sum1, sum2;
 
-	for (i = 0, i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				sum += a[i][j];
-		}
+		sum1 += a[i];
+		a += size;
 	}
-	return (sum);
+
+	a -= size;
+
+	for (i = 0; i < size; i++)
+	{
+		sum2 += a[i];
+		a -= size;
+	}
+
+	print("%d, %d\n", sum1, sum2);
 }
