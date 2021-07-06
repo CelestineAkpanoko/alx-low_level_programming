@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strstr - finds the first occurence of the substring needle 
- *	in the string haystack.
+ *_strstr - finds the first occurence of the substring.
  * @haystack: the parent string
  * @needle: substring
  *
@@ -13,13 +12,12 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i;
 
-	if(*needle == 0)
+	if (*needle == 0)
 		return (haystack);
 
 	while (*haystack)
 	{
 		i = 0;
-		
 		if (haystack[i] == needle[i])
 		{
 			do {
@@ -29,7 +27,6 @@ char *_strstr(char *haystack, char *needle)
 				i++;
 			} while (haystack[i] == needle[i]);
 		}
-		
 		haystack++;
 	}
 	return ('\0');
