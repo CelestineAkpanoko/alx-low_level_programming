@@ -4,7 +4,7 @@ int is_divisible(int num, int div);
 
 /**
  * is_divisible - checks if a num is divisible
- * @num the num
+ * @num: the num
  * @div: the divisor
  *
  * Return: 0 if divisible, 1 if not.
@@ -35,4 +35,4 @@ int is_prime_number(int n)
 		return (1);
 
 	return (is_divisible(n, div));
-}	
+}
