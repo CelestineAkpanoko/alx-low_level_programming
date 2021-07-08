@@ -16,7 +16,7 @@ int check_root(int num, int root)
 	if (root == num / 2)
 		return (-1);
 
-	return (find_sqrt(num, root + 1));
+	return (check_root(num, root + 1));
 }
 
 /**
