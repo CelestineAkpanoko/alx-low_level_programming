@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int cent, cnt = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	cent = atoi(argv[1]);
 
-	while(cent)
+	while (cent)
 	{
 		if (cent >= 25)
 		{
