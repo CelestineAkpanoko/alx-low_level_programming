@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
+void _is_zero(char *argv[]);
+char *initialize_array(char *ar, int len_ar);
+int _checknum(char *argv[], int n);
 /**
  * _is_zero - determines if any number is zero
  * @argv: argument array
