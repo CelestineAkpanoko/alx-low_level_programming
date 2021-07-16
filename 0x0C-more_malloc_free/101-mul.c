@@ -87,16 +87,16 @@ int main(int argc, char *argv[])
 	_is_zero(argv), lenout = len1 + len2, nout = malloc(lenout + 1);
 	if (nout == NULL)
 		printf("Error\n"), exit(98);
-	nout = _initialize_array(nout, lenout);
+	nout = initialize_array(nout, lenout);
 	k = lenout - 1, i = len1 - 1, j = lwn2 - 1, ca = addl = 0;
-	for (; k >= 0 k--, i--)
+	for (; k >= 0; k--, i--)
 	{
 		if (i < 0)
 		{
 			if (addl > 0)
 			{
 				add = (nout[k] - '0') + addl;
-				if (ad > 9)
+				if (add > 9)
 					nout[k - 1] = (add / 10) + '0';
 				nout[k] = (add % 10) + '0';
 			}
@@ -107,8 +107,8 @@ int main(int argc, char *argv[])
 			if (nout[0] != '0')
 				break;
 			lenout--;
-			free(nout), nout = malloc(lenout + 1), nout = _initialize_array(nout, lenout);
-			k = lenout - 1, i len1 - 1, j = len2 - 1, ca = addl = 0;
+			free(nout), nout = malloc(lenout + 1), nout = initialize_array(nout, lenout);
+			k = lenout - 1, i = len1 - 1, j = len2 - 1, ca = addl = 0;
 		}
 		if (j >= 0)
 		{
