@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 	if (nout == NULL)
 		printf("Error\n"), exit(98);
 	nout = initialize_array(nout, lenout);
-	k = lenout - 1, i = len1 - 1, j = lwn2 - 1, ca = addl = 0;
+	k = lenout - 1, i = len1 - 1, j = len2 - 1, ca = addl = 0;
 	for (; k >= 0; k--, i--)
 	{
 		if (i < 0)
