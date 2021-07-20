@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "dog.h"
 
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
 
 /**
  * new_dog - another dog struct
@@ -44,3 +46,39 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	return (dog_ptr);
 }
+
+/**
+ * _strlen - returns the length of a string
+ * @s: the string
+ *
+ * Return: length of a string
+ */
+int _strlen(char *s)
+{
+	int len;
+
+	for (len = 0; *s != '\0'; s++)
+		len++;
+
+	return (len);
+}
+
+/**
+ * _strcpy - copy a string from a source to a destination
+ * @dest: the destination string
+ * @src: the source string
+ *
+ * Return: pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	dest[i++] = '\0';
+
+	return (dest);
+}
+
