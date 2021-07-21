@@ -9,9 +9,6 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	if (s != '+' || s != '-' || s != '*' || s != '/' || s != '%')
-		return (NULL);
-
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -27,6 +24,4 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 
 	return (ops[i].f);
-}
-
-	
+}	
