@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main prints the result of the operation
+ * main - prints the result of the operation
  * @argc: argument count
  * @argv: argument array
  *
