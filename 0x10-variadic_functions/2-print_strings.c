@@ -9,7 +9,7 @@
  * @...: the parameters passed
  */
 
-void print_strings(constchar *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	char *str;
