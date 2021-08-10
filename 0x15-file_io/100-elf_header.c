@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
