@@ -7,9 +7,6 @@
 #include <stdlib.h>
 #include "holberton.h"
 
-void print_entry(unsigned long int e_entry, unsigned char *e_ident);
-void close_elf(int elf);
-
 /**
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
