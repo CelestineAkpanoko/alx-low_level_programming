@@ -12,7 +12,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o holberton
 
 clean:
-	$(RM) -f *~$(NAME)
+	$(RM) -f *~ $(NAME)
 
 oclean:
 	$(RM) -f $(OBJ)
